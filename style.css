@@ -15,15 +15,14 @@ main > section {
 }
 
 h1 {
-  color: darkred;
+  color: white;
   font-family: "Limelight", cursive;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
 }
 
 h2 {
-  margin: 3rem 1rem 0rem 1rem;
-
+  margin: 1rem 1rem 0rem 1rem;
   font-family: "Merriweather", serif;
   font-size: 1.4em;
 }
@@ -42,7 +41,7 @@ p {
 }
 
 header {
-  background-color: #e5e1d6;
+  background-color: darkred;
   text-align: center;
   padding: 1rem 1.5rem;
   box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.3);
@@ -71,7 +70,8 @@ article {
   margin: 1rem;
   padding: 1rem;
   cursor: pointer;
-  border: 1px solid lightgrey;
+  background-color: white;
+  box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.3);
 }
 
 section {
@@ -80,12 +80,17 @@ section {
 }
 
 .valgt {
-  background-color: darkred;
+  background-color: black;
+  color: white;
 }
 
 .container button {
-  padding: 1rem;
-  text-align: end;
+  border: none;
+  cursor: pointer;
+
+  padding-block: 1rem;
+  padding-inline: 7rem;
+  font-family: "Merriweather", serif;
 }
 
 #popup {
@@ -104,13 +109,17 @@ section {
   font-weight: 400;
 }
 
+.align {
+  text-align: center;
+}
+
 #popup h2 {
   margin: 0;
 }
 
 #popup article {
   background-color: white;
-  width: 50%;
+  width: 65%;
   margin: auto;
 }
 
@@ -130,7 +139,7 @@ section {
   }
 
   #popup article {
-    width: 65%;
+    width: 50%;
   }
 }
 
@@ -139,7 +148,25 @@ section {
     width: 40%;
   }
 
+  section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+
   nav button {
     padding: 1rem 2rem;
+  }
+
+  nav {
+    margin: 4rem 1rem 1rem 1rem;
+  }
+
+  .align {
+    text-align: end;
+  }
+
+  .container button {
+    padding-block: 1rem;
+    padding-inline: 2rem;
   }
 }
