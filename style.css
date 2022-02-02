@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e7e6e1;
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1200px) auto;
+  align-items: center;
+}
+
+main > section {
+  grid-column: 2/3;
+}
+
+h1 {
+  color: darkred;
+  font-family: "Limelight", cursive;
+  font-size: 3em;
+  text-align: center;
+}
+
+h2 {
+  margin: 3rem 1rem 0rem 1rem;
+
+  font-family: "Merriweather", serif;
+  font-size: 1.4em;
+}
+
+.underoverskrift {
+  margin: 1rem;
+  grid-column: 2/3;
+  font-family: "Merriweather", serif;
+  font-size: 1.4em;
+}
+
+p {
+  font-family: "Merriweather", serif;
+  margin: 1rem 1rem 2rem 1rem;
+  font-size: 1em;
+}
+
+header {
+  background-color: #e5e1d6;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.3);
+}
+
+nav {
+  grid-column: 2/3;
+  margin: 1rem;
+}
+
+nav button {
+  background-color: #3895ac;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.2rem 0.1rem;
+  cursor: pointer;
+  font-family: "Merriweather", serif;
+  padding: 0.7rem;
+  font-size: 1em;
+}
+
+article {
+  margin: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  border: 1px solid lightgrey;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.valgt {
+  background-color: darkred;
+}
+
+.container button {
+  padding: 1rem;
+  text-align: end;
+}
+
+#popup {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: #00000099;
+  padding-block: 15em;
+  display: none;
+  overflow: scroll;
+}
+
+.align_end {
+  text-align: end;
+  font-weight: 400;
+}
+
+#popup h2 {
+  margin: 0;
+}
+
+#popup article {
+  background-color: white;
+  width: 50%;
+  margin: auto;
+}
+
+#tilbage {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+@media (min-width: 500px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  #popup article {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1000px) {
+  #popup article {
+    width: 40%;
+  }
+
+  nav button {
+    padding: 1rem 2rem;
+  }
+}
