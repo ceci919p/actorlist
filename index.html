@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actors list</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Limelight&family=Merriweather:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Actors List</h1>
+    </header>
+
+    <main>
+      <nav>
+        <button data-movie="alle" class="valgt">Alle</button>
+        <button data-movie="Pulp Fiction">Pulp Fiction</button>
+        <button data-movie="Fight Club">Fight Club</button>
+        <button data-movie="Goodfellas">Goodfellas</button>
+        <button data-movie="Inception">Inception</button>
+      </nav>
+      <h3 class="underoverskrift">Alle</h3>
+
+      <section id="popup">
+        <article>
+          <div class="align_end">
+            <button id="tilbage">X</button>
+          </div>
+          <h2 id="popup_fullname"></h2>
+          <hr />
+          <p id="popup_movie"></p>
+        </article>
+      </section>
+
+      <section class="container"></section>
+      <template>
+        <article>
+          <h2 id="fullname"></h2>
+          <p id="movie"></p>
+          <button>info</button>
+        </article>
+      </template>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
